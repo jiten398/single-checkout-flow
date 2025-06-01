@@ -4,7 +4,7 @@ import Order from '@/models/Order';
 
 export async function GET(request: NextRequest) {
   try {
-    await dbConnect;
+    await dbConnect();
     
     const searchParams = request.nextUrl.searchParams;
     const orderId = searchParams.get('orderId');
@@ -16,7 +16,7 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    const order = await Order.findOne({ orderId });
+    const order = await Order.findOne({ orderId : orderId }).lean();
 
     if (!order) {
       return NextResponse.json(
