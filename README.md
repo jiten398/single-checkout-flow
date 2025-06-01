@@ -122,10 +122,6 @@ ecommerce-flow/
 ```
 
 ## 🔌 API Endpoints
-
-### Products
-- `GET /api/products/featured` - Get featured product with variants
-
 ### Orders
 - `POST /api/checkout` - Create new order
 - `GET /api/orders?orderId={id}` - Get order details
