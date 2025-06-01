@@ -54,7 +54,7 @@ A full-stack eCommerce application built with Next.js 14, MongoDB, and TypeScrip
 1. **Clone the repository**
 ```bash
 git clone <repository-url>
-cd ecommerce-flow
+cd <your_project_folder_name>
 ```
 
 2. **Install dependencies**
@@ -115,8 +115,6 @@ ecommerce-flow/
 ├── models/
 │   ├── Order.ts                 # Order schema
 │   ├── Product.ts               # Product schema
-│   ├── Size.ts                  # Size variant schema
-│   └── Variant.ts               # Color variant schema
 ├── public/
 │   └── images/                  # Product images
 └── types/
